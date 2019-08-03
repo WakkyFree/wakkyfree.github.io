@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel = "stylesheet" href = "omikuji_element.css"/>
 <script>
     function tryFortune() {
         var resultInt = Math.floor(Math.random () * 7)
@@ -19,7 +20,7 @@
 </head>
 <body>
     <h1>HTMLとJavaScriptによるWebおみくじ</h1>
-    <button onclick="tryFortune()">おみくじを引く</button>
+    <button class = "button_omikuji" onclick="tryFortune()">おみくじを引く</button>
     <p id = "result"></p>
 </body>
 </html>

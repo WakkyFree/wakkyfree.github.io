@@ -1,0 +1,19 @@
+* {
+    font-size:20px;
+}
+h1 {
+    font-size:22px;
+    margin:20px;
+}
+p {
+    margin-left:175px;
+    padding:5px;
+}
+.button_omikuji {
+    width:160px;
+    height:40px;
+    margin-left:120px;
+}
+#result{
+    color:blue
+}
