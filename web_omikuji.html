@@ -6,15 +6,16 @@
     function tryFortune() {
         var resultInt = Math.floor(Math.random () * 7)
         switch (resultInt) {
-            case 0 : resultText = "大凶";   break;
-            case 1 : resultText = "凶";     break;
-            case 2 : resultText = "末吉";   break;
-            case 3 : resultText = "小吉";   break;
-            case 4 : resultText = "中吉";   break;
-            case 5 : resultText = "吉";     break;
-            default : resultText = "大吉";  break;
+            case 0 : resultText = "大凶";   resultClass = "bad";   break;
+            case 1 : resultText = "凶";     resultClass = "bad";   break;
+            case 2 : resultText = "末吉";   resultClass = "normal";   break;
+            case 3 : resultText = "小吉";   resultClass = "normal";   break;
+            case 4 : resultText = "中吉";   resultClass = "good";   break;
+            case 5 : resultText = "吉";     resultClass = "good";   break;
+            default : resultText = "大吉";  resultClass = "good";   break;
         }
         document.getElementById("result").textContent = resultText;
+        document.getElementById("result").className = resultClass;
     }
 </script>
 </head>
