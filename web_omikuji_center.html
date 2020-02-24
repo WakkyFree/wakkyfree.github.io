@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel = "stylesheet" href = "omikuji_element_center.css"/>
+<script>
+    function tryFortune() {
+        var resultInt = Math.floor(Math.random () * 7)
+        switch (resultInt) {
+            case 0 : resultText = "大凶";   resultClass = "bad";   break;
+            case 1 : resultText = "凶";     resultClass = "bad";   break;
+            case 2 : resultText = "末吉";   resultClass = "normal";   break;
+            case 3 : resultText = "小吉";   resultClass = "normal";   break;
+            case 4 : resultText = "中吉";   resultClass = "good";   break;
+            case 5 : resultText = "吉";     resultClass = "good";   break;
+            default : resultText = "大吉";  resultClass = "good";   break;
+        }
+        document.getElementById("result").textContent = resultText;
+        document.getElementById("result").className = resultClass;
+        console.log(resultClass);
+    }
+</script>
+</head>
+<body>
+    <div class="main">
+        <h1>HTMLとJavaScriptによるWebおみくじ</h1>
+        <button class = "button_omikuji" onclick="tryFortune()">おみくじを引く</button>
+        <p id = "result"></p>
+    </div>
+</body>
+</html>
